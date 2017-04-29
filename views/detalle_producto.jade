@@ -1,0 +1,22 @@
+doctype
+html 
+	head
+		title Detalle
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet")
+		link(href='./css/style.css' rel="stylesheet")
+
+	body
+
+		section
+						.container-fluid
+							.row
+								.col-xs-12.col-md-12
+									h2.mora Detalle producto
+									hr.hrMora
+							.row
+								each item in product
+									.col-xs-12.col-md-3
+										img.img-responsive(src="#{item.img}")
+										h3.text-center #{item.name}
+										h4.text-center $#{item.price}
+										p.text-center #{item.description}

@@ -1,0 +1,68 @@
+doctype
+html 
+	head
+		title Portafolio SAN-X
+		link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet")
+		link(href='./css/style.css' rel="stylesheet")
+
+	body
+		nav.menu
+			ul
+				l1 
+					a Inicio 
+				l1 
+					a Productos 
+				l1 
+					a About 
+				l1 
+					a Contacto 
+
+		header
+			.container-fluid
+				.row
+					.col-xs-12.cl-md-12
+						img.img-responsive(src = "/images/ril.jpg")
+						h1 EL O  S  O
+						hr
+						h3 Web Developer - Graphic Artist - User Experience Designer
+
+		section
+
+			.container-fluid
+				.row
+					.col-xs-12.cl-md-12
+						img.img-responsive(src = "/images/toha.jpg")
+						h2 About
+						hr
+						h3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+		section.contact
+			.container-fluid
+				.row
+					.col-xs-12.cl-md-12
+						form
+							label Nombre
+							input.form-control(type="text" name="nombre" placeholder ="Introduce tu nombre")
+							label Correo
+							input.form-control(type="text" name="mail" placeholder ="Introduce tu correo")
+							label Telefono
+							input.form-control(type="text" name="telefono" placeholder ="+569 xxx xx xx")
+							label Mensaje
+							textarea.form-control(name="mensaje" placeholder ="Introduce tu mensaje")
+							br
+							input.form-control(type="submit" value="Enviar" class="btn-personalizado")
+
+		section
+				.container-fluid
+					.row
+						.col-xs-12.col-md-12
+							h2.mora Mis productos
+							hr.hrMora
+					.row
+						each item in product
+							.col-xs-12.col-md-3
+								img.img-responsive(src="#{item.img}")
+								h3.text-center #{item.name}
+								h4.text-center $#{item.price}
+								p.text-center #{item.description}
+

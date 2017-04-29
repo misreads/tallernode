@@ -1,0 +1,115 @@
+.menu {
+	width: 100%;
+	background: #333;
+	padding: 10px;
+	position: fixed;
+	z-index: 1000;
+}
+
+.menu ul {
+	float: left;
+	width: 100%;
+	list-style: none;
+
+}
+
+.menu ul li {
+float: left;
+}
+
+.menu ul li a{
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.menu ul li a:hover{
+	color: #ff5;
+}
+
+header {
+	padding: 120px;
+	background: #18BC9C;
+
+}
+
+header img {
+	margin: 0 auto;
+	display: block;
+}
+
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+
+}
+header hr {
+	border: 4px solid #f8f8f8;
+	width: 250px;
+
+}
+
+header h3 {
+	text-align: center;
+	color: white;
+}
+
+section {
+	padding: 120px;
+	background: white;
+
+}
+
+section.contact {
+	padding: 120px;
+	background: #18BC9C;
+	color: #fff
+
+}
+
+section.contact input{
+margin-bottom: 10px;
+border-radius: 2px;
+
+}
+
+section.contact label{
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+section h2 {
+	text-align: center;
+	text-transform: uppercase;
+	color: #333;
+
+}
+
+section h3 {
+	text-align: center;
+	color: #333;
+}
+
+section hr {
+	border: 4px solid #333;
+	width: 200px;
+}
+
+section img {
+	max-width: 500px;
+  	max-height: 200px;
+  	width: auto;
+  	height: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+.btn-personalizado{
+	background: #8e44ad;
+	color: #fff;
+	border-color: #8e44ad;
+	border-radius: 2px;
+}
