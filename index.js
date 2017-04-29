@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const cloudinary = require('cloudinary');
 
 
-let port = process.env.PORT || 3000;
+let port = process.env.PORT || 5000;
 
 app.set('views' , './views');
 app.set('view engine', 'jade');
